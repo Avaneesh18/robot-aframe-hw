@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color:white">
+      <!--Camera-->
+      <a-entity position="0 0 10">
+        <a-camera></a-camera>
+      </a-entity>
+
+      <a-box
+        position="0.97299 2.16626 1.62974"
+        scale="1.02492 -0.17422 2"
+        color="blue"
+        material=""
+        geometry=""
+      >
+      </a-box>
+      <a-box
+        position="0.94945 2.69061 1.06796"
+        scale="1.61885 0.66887 2"
+        color="lightblue"
+        material=""
+        geometry=""
+      >
+      </a-box>
+      <a-box
+        position="1 1 1"
+        scale="2 2 2"
+        color="lightblue"
+        material=""
+        geometry=""
+      ></a-box>
+      <a-sphere
+        position="0.46571 2.61815 2.25599"
+        color="white"
+        material=""
+        geometry="radius: 0.2"
+      ></a-sphere>
+      <a-sphere
+        position="1.38733 2.68451 2.03107"
+        color="white"
+        material=""
+        geometry="radius: 0.2"
+      ></a-sphere>
+      <a-entity
+        rotation="0 0 0"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"
+      >
+        <a-cylinder
+          position="2.16344 1.63069 2.66355"
+          color="yellow"
+          radius="0.5"
+          material=""
+          geometry=""
+        ></a-cylinder>
+      </a-entity>
+      
+      <a-entity
+        rotation="0 0 0"
+        animation="property: position; to: 0 360 0; loop: true; dur: 10000"
+      >
+        <a-cylinder
+          position="-0.15617 1.55985 2.06442"
+          color="yellow"
+          radius="0.5"
+          material=""
+          geometry=""
+        ></a-cylinder>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
